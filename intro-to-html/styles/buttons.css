@@ -1,0 +1,127 @@
+.subs-button{
+  background-color: rgb(255, 7, 7);
+  color:white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2.5px;
+  cursor:pointer;
+  margin-right: 7px;
+  /* biasanya kalau lupa pergi ke gugel */
+  /* measurement use trial and error, ga bisa langsung jago */
+  /* css property : what we changing out property */
+  transition: opacity 1s;
+  /* buat transisi pas ada opacity/pas dipencet */
+  vertical-align: top;
+}
+
+.subs-button:hover{
+ opacity: 0.7;
+ /* biar pas kena kursor dia jadi ada putih2nya */
+}
+
+.subs-button:active{
+ opacity: 0.5;
+}
+
+.join-button{
+  background-color: white;
+  border-color: rgb(33, 136, 253);
+  border-style: solid;
+  border-width: 1px; 
+  /* ini tipis engganya border */
+  color:rgb(33, 136, 253);
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 7px;
+/* color buat huruf*/
+transition: background-color 0.55s, 
+color 0.4s;
+vertical-align: top;
+}
+
+.join-button:hover{
+  background-color: rgb(33, 136, 253);
+  color: white;
+}
+
+.join-button:active{
+  opacity: 0.65;
+  /* opacity range 0-1 */
+}
+
+.tweet-button{
+  background-color: rgb(29, 155, 240)    ;
+  padding-top:10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 18px; 
+  /* buat setengahnya width/height aja biar gampang */
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+
+.tweet-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  /* yang paling kanan itu tentang shadownya, semakin pudar*/
+}
+
+.uber{
+  background-color: black;
+  color: white;
+  border: none;
+  width: 110px;
+  height: 36px;
+  font-weight: lighter;
+  transition: opacity 0.8s;
+  vertical-align: top;
+}
+/* hex to rgb calculator or cek aja di inspect, cursor, computed value */
+.uber:hover{
+  opacity: 0.76;
+}
+
+.stretch{
+  background-color: green;
+  color: white;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
+  vertical-align: top;
+  transition: padding 0.8s;
+}
+
+.stretch:hover{
+  padding: 30px;
+}
+
+.one{
+  background-color: green;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: padding-left 0.8s;
+  transition: padding-right 0.8s;
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+.one:hover{
+  padding-left: 13px;
+  padding-right: 13px;
+}

@@ -1,0 +1,55 @@
+
+  p {
+    font-family: Sour Gummy;
+    margin-top: 0;
+  }
+
+  .vidTitle{
+    font-size:18px;
+    font-weight: bold;
+    width: 300px;
+    line-height: 25px;
+    margin-bottom: 5px;
+  }
+
+  .vidStats{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+  }
+
+  .text{
+    font-size: 14px;
+    color: rgba(96, 96, 96);
+    margin-bottom: 20px;
+  }
+
+  .desc{
+    font-size: 14px;
+    color: rgba(96, 96, 96);
+    width: 280px;
+    /* buat biar ke spasi ke bawah gitu, diteken(?) gitulah */
+    line-height: 22px;
+    /* buat height between text */
+  }
+
+  .iklan{
+    margin-bottom: 50px;
+    background-color: rgb(203, 0, 0);
+    color: white;
+    font-size: 13px;
+    width: 450px;
+    text-align: center;
+    /* spacing in the elements called padding */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* text-decoration */
+
+    .shopLink{
+      cursor: pointer;
+    }
+
+    .shopLink:hover{
+      text-decoration: underline;
+      /* cara dapat multiple spca/spasi itu pakai margin */
+    }
+  }

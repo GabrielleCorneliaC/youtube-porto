@@ -1,0 +1,40 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 45px;
+  background-color: white;
+  width: 72px;
+  z-index: 200px;
+  /* biar lebih rendah daripada
+  cover headernya, biar garis border header kelihatan*/
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.sidebar-link{
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  /* justify biar kanan kiri sama */
+  align-items: center;
+  /* align items biar vertical sama */
+  flex-direction: column;
+  /* columnnya jadi vertical. urutan flex dan justify 
+  jangan dibalik */
+}
+
+.sidebar-link:hover{
+  background-color: rgb(216, 216, 216);
+} 
+
+/* targeting images inside sidebar-link */
+.sidebar-link img{
+height: 24px;
+margin-bottom: 4px;
+}
+
+.sidebar-link div{
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}

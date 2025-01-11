@@ -1,0 +1,72 @@
+.thumbnailwebp {
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+}
+
+.title{
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.ch-Picture{
+  width: 35px;
+  vertical-align: top;
+}
+
+.vid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsif */
+  gap: 16px 40px; /* Jarak antar kolom dan baris */
+}
+
+.vid-Info{
+  width: 200px;
+}
+
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.profpicture{
+  border-radius: 50px;
+  width: 100%;
+  height: auto;
+}
+
+
+.stats, 
+.author{
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+
+.author{
+  margin-bottom: 4px;
+}
+
+.video-time{
+  font-family: Roboto,Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+background-color: black;
+color: white;
+position: absolute;
+bottom: 8px;
+right: 5px;
+}

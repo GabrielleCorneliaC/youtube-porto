@@ -1,0 +1,163 @@
+.header{
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; 
+  /* biar headernya appear di atas thumbnail */
+  background-color: white;
+
+  border-bottom-width:1px ;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(216, 216, 216);
+}
+
+.left{
+  width: 155px;
+  align-items: center;
+  display: flex;
+}
+/* align items itu cuma bisa dipakai di flex box */
+
+.hamburger{
+height: 24px;
+margin-left: 24px;
+margin-right: 24px;
+}
+
+.logo{
+height: 20px;
+}
+
+.middle{
+  flex: 1;
+  margin-left: 100px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+ }
+
+.searchbar::placeholder{
+font-family: Roboto,arial;
+font-size: 15px;
+}
+
+.searchbar{
+  flex:1;
+  width: 0;
+  flex-direction: column;
+  height: 40px;
+  background-color: white;
+  padding-left: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 15);
+  margin-left: -1px;
+
+  /* margin minus push ke side yang diminus, mostly left ya */
+}
+
+.search{
+  height: 22px;
+  width: 27px;
+}
+
+.search, .voice, .upload-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .tooltip,
+.voice .tooltip,
+.upload-container .tooltip{
+  font-family: Roboto, Arial;
+position: absolute;
+background-color: gray;
+color: white;
+padding-top: 2px;
+padding-left: 2px;
+padding-right: 2px;
+padding-bottom: 2px;
+border-radius: 2px;
+font-size: 12px;
+bottom: -30px;
+left: -15px;
+opacity: 0;
+transition: opacity 0.15;
+pointer-events: none; 
+/* biar gak ke call pointer ada di tempat search tooltipnya */
+white-space: nowrap;
+}
+
+.search:hover .tooltip,
+.voice:hover .tooltip,
+.upload-container:hover .tooltip{
+  opacity: 1;
+}
+
+.voice{
+  margin-left: 10px;
+  height: 26px;
+  width: 26px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(226, 218, 218);
+}
+
+.voice-search-icon{
+  height: 18px;
+}
+
+.right{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+}
+
+.upload{
+height: 24px;
+}
+
+.notification{
+height: 24px;
+}
+
+.notification-icon-contains{
+position: relative;
+}
+
+.notif-count{
+  position:absolute;
+  top: -5px;
+  background-color: red;
+  color: white;
+  font-family: Roboto,arial;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  border-radius: 10px;
+  right: -5px;
+  padding-left: 5px;
+}
+
+.youtube-apps{
+height: 24px;
+}
+
+.my-channel{
+height: 24px;
+border-radius: 50px;
+}
